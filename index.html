@@ -1,3 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#03060C">
+<meta name="description" content="Sagar Jadav, Senior Backend Engineer in Ahmedabad. Node.js, TypeScript and Python APIs, data layers, event-driven services and AI agent backends.">
+<meta property="og:title" content="Sagar Jadav, Senior Backend Engineer">
+<meta property="og:description" content="I build the systems behind the screen. 5+ years of Node.js, TypeScript and Python backends.">
+<meta property="og:image" content="https://sagar409-conflict.github.io/poster.jpg">
+<meta property="og:url" content="https://sagar409-conflict.github.io/">
+<meta name="twitter:card" content="summary_large_image">
 <title>Sagar Jadav, Backend Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +32,9 @@
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
 body {
+  margin: 0; overflow-x: hidden;
   background:
     radial-gradient(1200px 700px at 78% 8%, #0E1A2E 0%, rgba(14,26,46,0) 70%),
     radial-gradient(900px 600px at 0% 60%, rgba(94,234,212,.05), rgba(0,0,0,0) 70%),
@@ -133,17 +147,21 @@ footer { font: 400 12px var(--mono); color: var(--muted); display: flex; justify
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: minmax(0, 1fr); min-height: 0; }
-  .globe-box { max-width: 460px; order: -1; }
+  .globe-box { max-width: 340px; margin-top: -8px; }
   .job.lead { grid-template-columns: minmax(0, 1fr); }
   .facts, .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 28px; }
   .stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 560px) {
+  .wrap { gap: 64px; }
+  .hero .txt { margin-top: -24px; }
   .work, .stack, .steps { grid-template-columns: minmax(0, 1fr); }
   .row { grid-template-columns: 130px 1fr; }
 }
 </style>
 
+</head>
+<body>
 <div class="stars" aria-hidden="true"></div>
 <div class="wrap">
   <header class="bar">
@@ -352,3 +370,6 @@ document.getElementById('copy-email').addEventListener('click', async (e) => {
   if (document.fonts) document.fonts.ready.then(() => requestAnimationFrame(frame));
 })();
 </script>
+
+</body>
+</html>
